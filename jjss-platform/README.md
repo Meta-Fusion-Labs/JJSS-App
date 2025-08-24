@@ -1,36 +1,39 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# JJSS — The Junior Journal for STEM Studies
 
-## Getting Started
+> Youth-led open science: learners (ages 6–16) **replicate experiments, publish results, and build a transparent, decentralised body of knowledge**.
 
-First, run the development server:
+**Live:** https://jjss-app.vercel.app  
+**Repo:** https://github.com/Meta-Fusion-Labs/JJSS-App
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## ✨ What is JJSS?
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+JJSS is a UK-born education platform and movement. Kids and teens don’t just learn STEM—they **do real science**:
+- Follow guided, age-appropriate **experiment modules**
+- **Upload** data & write-ups
+- **Publish** to a tamper-evident archive (hash anchored on chain, no PII on chain)
+- **Discuss** in moderated subject rooms
+- **Earn** badges/certificates for replication, rigor, and contribution
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+This repo hosts the **JJSS web app** (Next.js, TypeScript, Tailwind). MVP focus: modules, profile/progress, journal submission, educator moderation, and publication provenance.
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## 🧱 Current Status (MVP)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- ✅ App scaffold (Next.js App Router) deployed on Vercel  
+- ✅ Landing page + basic structure  
+- ✅ Initial pitch/roadmap/whitepaper assets produced  
+- ⏳ In progress: modules listing, journal submit flow, educator review queue, publication anchor
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## 🛠 Tech Stack
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- **Frontend**: Next.js 14 (App Router), React 18, TypeScript, Tailwind CSS
+- **Build/Dev**: Turbopack (dev), Vercel (deploy)
+- **Data**: (Planned) Postgres via Prisma
+- **Auth**: (MVP) email/passkeys w/ guardian link; (14+) optional wallet link later
+- **Storage**: S3-compatible for uploads (planned)
+- **Provenance**: hash anchoring (XRPL or EVM) — **no personal data on chain**
