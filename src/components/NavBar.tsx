@@ -18,7 +18,7 @@ export default function NavBar() {
         <Link href="/" className="flex items-center gap-2">
           {/* Logo image (replace with your /public/jjss-logo.svg or png) */}
           <Image
-            src="/jjss-logo.svg"
+            src="/jjss-logo2.svg"
             alt="JJSS Logo"
             width={32}
             height={32}
